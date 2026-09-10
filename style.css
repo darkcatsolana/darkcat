@@ -1,0 +1,215 @@
+html{
+    width: 100%;
+}
+body{
+    background-color: #09090A;
+    min-height: 100vh;
+    max-width: 100%;
+    font-size: 14px;
+    margin: 0;
+}
+.actor-regular {
+  font-family: "Actor", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.lacquer-regular {
+  font-family: "Lacquer", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100px;
+}
+h1{
+    margin: 0;
+}
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+.menu nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 1.5em;
+    color: white;
+}
+.menu nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+.menu img{
+    height: 1.2em;
+}
+main{
+    background-image: url(imgs/moon_smartp.webp);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.containerMain{
+    min-height: 100vh;
+}
+.contentMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 110px;
+
+}
+.contentMain .king{
+    width: 100%;
+    max-width: 574px;
+}
+.contentMain .text{
+    width: 95%;
+    max-width: 574px;
+    font-size: 1.5em;
+    color: #828186;
+    margin-top: 1.5rem;
+}
+.contentMain .text img.icoCatWhite{
+    max-width: 41px;
+}
+.imgDarkCat{
+    align-self: flex-end;
+    display: flex;
+}
+.imgDarkCat img{
+    max-width: 100%;
+}
+.pumpFunLink{
+    max-width: 574px;
+    margin-top: 1.5rem;
+}
+.pumpFunLink a{
+    text-decoration: none;
+}
+.pumpFunLink .border{
+    border: 2px solid white;
+    filter: drop-shadow(0 0 5px white);
+    border-radius: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2em;
+    gap: 1.5em;
+    flex-wrap: nowrap;
+    margin-bottom: 1.2rem;
+}
+.pumpFunLink img{
+    max-width: 42px;
+    height: auto;
+    margin: 0;
+    filter: grayscale(1);
+}
+.pumpFunLink p{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+}
+.buyHold{
+    font-size: 1.8rem;
+    color: #828186;
+    margin-bottom: 2rem;
+    transform: rotateZ(-5deg);
+}
+.iconsContainer{
+    background-color: #020202;
+    padding: 2.5rem;
+}
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    color: white;
+    flex: 1 1 50%;
+    gap: .5rem;
+}
+.icon p{
+    margin: 0;
+    margin-top: .5rem;
+    text-transform: uppercase;
+}
+.icon span{
+    opacity: .5;
+}
+.disclaimer p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: .85rem;
+    color: white;
+    width: 95%;
+    text-align: center;
+    opacity: .5;
+    line-height: 1.5;
+}
+@media (max-width:425px){
+    .logo .logoWrite{
+        display: none;
+    }
+}
+@media (min-width:1024px){
+    body{
+        font-size: 16px;
+    }
+    main{
+        background-image: url(imgs/moon.webp);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+    .containerMain{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contentMain{
+        width: 50%;
+    }
+    .contentMain .text{
+        font-size: 1.3em;
+    }
+    .imgDarkCat{
+        width: 50%;
+    }
+    .pumpFunLink{
+        width: 100%;
+    }
+    .pumpFunLink .border{
+        gap: 2em;
+    }
+    .pumpFunLink img{
+        max-width: 62px;
+    }
+    .pumpFunLink p{
+        font-size: 2.25rem;
+        white-space: nowrap;
+    }
+    .icons{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .icon{
+        flex: unset;
+    }
+    .buyHold{
+        font-size: 2.5rem;
+    }
+}
